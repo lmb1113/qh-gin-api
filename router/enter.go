@@ -1,7 +1,7 @@
 package router
 
 import (
-	"qh-gin-api/router/user"
+	"github.com/lmb1113/qh-gin-api/router/user"
 )
 
 type RouterGroup struct {

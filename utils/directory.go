@@ -2,10 +2,10 @@ package utils
 
 import (
 	"errors"
+	"github.com/lmb1113/qh-gin-api/global"
 	"go.uber.org/zap"
 	"os"
 	"path/filepath"
-	"qh-gin-api/global"
 	"reflect"
 	"strings"
 )

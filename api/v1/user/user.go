@@ -2,7 +2,7 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	"qh-gin-api/model/user/response"
+	"github.com/lmb1113/qh-gin-api/model/user/response"
 )
 
 type UsersApi struct {

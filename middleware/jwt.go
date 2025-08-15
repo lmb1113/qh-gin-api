@@ -2,14 +2,15 @@ package middleware
 
 import (
 	"errors"
-	"github.com/gin-gonic/gin"
-	jwt2 "github.com/golang-jwt/jwt/v5"
-	"qh-gin-api/global"
-	"qh-gin-api/model/common/response"
-	"qh-gin-api/pkg/jwt"
-	"qh-gin-api/utils"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/model/common/response"
+	"github.com/lmb1113/qh-gin-api/pkg/jwt"
+	"github.com/lmb1113/qh-gin-api/utils"
 	"strconv"
 	"time"
+
+	"github.com/gin-gonic/gin"
+	jwt2 "github.com/golang-jwt/jwt/v5"
 )
 
 func JWTAuth() gin.HandlerFunc {

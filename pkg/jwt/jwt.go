@@ -3,12 +3,13 @@ package jwt
 import (
 	"context"
 	"errors"
-	"qh-gin-api/utils"
+	"github.com/lmb1113/qh-gin-api/utils"
 	"time"
 
-	jwt "github.com/golang-jwt/jwt/v5"
-	"qh-gin-api/global"
-	"qh-gin-api/model/jwt/request"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/model/jwt/request"
+
+	"github.com/golang-jwt/jwt/v5"
 )
 
 type JWT struct {

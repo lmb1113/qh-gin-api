@@ -2,12 +2,12 @@ package core
 
 import (
 	"fmt"
+	"github.com/lmb1113/qh-gin-api/core/internal"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/utils"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
-	"qh-gin-api/core/internal"
-	"qh-gin-api/global"
-	"qh-gin-api/utils"
 )
 
 func Zap() (logger *zap.Logger) {

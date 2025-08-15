@@ -1,15 +1,16 @@
 package middleware
 
 import (
-	"github.com/gin-gonic/gin"
-	"go.uber.org/zap"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/model/common/response"
 	"net"
 	"net/http/httputil"
 	"os"
-	"qh-gin-api/global"
-	"qh-gin-api/model/common/response"
 	"runtime/debug"
 	"strings"
+
+	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
 )
 
 const stack = true

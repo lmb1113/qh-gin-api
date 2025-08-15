@@ -2,8 +2,8 @@ package core
 
 import (
 	"fmt"
-	"qh-gin-api/global"
-	"qh-gin-api/initialize"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/initialize"
 	"time"
 )
 

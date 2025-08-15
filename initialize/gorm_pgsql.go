@@ -1,11 +1,11 @@
 package initialize
 
 import (
+	"github.com/lmb1113/qh-gin-api/config"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/initialize/internal"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"qh-gin-api/config"
-	"qh-gin-api/global"
-	"qh-gin-api/initialize/internal"
 )
 
 func GormPgSql() *gorm.DB {

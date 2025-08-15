@@ -1,14 +1,15 @@
 package jwt
 
 import (
+	"github.com/lmb1113/qh-gin-api/model/user"
 	"net"
-	user "qh-gin-api/model/user"
 	"time"
+
+	"github.com/lmb1113/qh-gin-api/global"
+	jwtReq "github.com/lmb1113/qh-gin-api/model/jwt/request"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"qh-gin-api/global"
-	jwtReq "qh-gin-api/model/jwt/request"
 )
 
 func ClearToken(c *gin.Context) {

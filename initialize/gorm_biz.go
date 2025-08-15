@@ -1,7 +1,7 @@
 package initialize
 
 import (
-	"qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/global"
 )
 
 func bizModel() error {

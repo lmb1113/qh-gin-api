@@ -2,13 +2,13 @@ package initialize
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/lmb1113/qh-gin-api/docs"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/middleware"
+	"github.com/lmb1113/qh-gin-api/router"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"net/http"
-	"qh-gin-api/docs"
-	"qh-gin-api/global"
-	"qh-gin-api/middleware"
-	"qh-gin-api/router"
 )
 
 func HealthCheck(g *gin.Context) {

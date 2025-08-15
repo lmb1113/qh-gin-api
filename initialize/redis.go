@@ -3,8 +3,8 @@ package initialize
 import (
 	"context"
 	"github.com/go-redis/redis/v8"
+	"github.com/lmb1113/qh-gin-api/global"
 	"go.uber.org/zap"
-	"qh-gin-api/global"
 )
 
 func Redis() {

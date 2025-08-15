@@ -1,8 +1,9 @@
 package user
 
 import (
+	"github.com/lmb1113/qh-gin-api/api/v1"
+
 	"github.com/gin-gonic/gin"
-	"qh-gin-api/api/v1"
 )
 
 type UsersRouter struct {

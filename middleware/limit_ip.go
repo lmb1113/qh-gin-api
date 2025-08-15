@@ -3,12 +3,13 @@ package middleware
 import (
 	"context"
 	"errors"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/model/common/response"
+	"net/http"
+	"time"
+
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
-	"net/http"
-	"qh-gin-api/global"
-	"qh-gin-api/model/common/response"
-	"time"
 )
 
 type LimitConfig struct {

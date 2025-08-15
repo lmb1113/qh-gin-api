@@ -1,10 +1,11 @@
 package flake
 
 import (
-	"github.com/sony/sonyflake"
 	"math/rand"
 	"sync"
 	"time"
+
+	"github.com/sony/sonyflake"
 )
 
 var (

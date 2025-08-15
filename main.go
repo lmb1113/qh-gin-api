@@ -1,10 +1,11 @@
 package main
 
 import (
+	"github.com/lmb1113/qh-gin-api/core"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/initialize"
+
 	"go.uber.org/zap"
-	"qh-gin-api/core"
-	"qh-gin-api/global"
-	"qh-gin-api/initialize"
 )
 
 //go:generate go env -w GO111MODULE=on

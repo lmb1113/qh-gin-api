@@ -2,9 +2,9 @@ package initialize
 
 import (
 	//"github.com/dzwvip/oracle"
-	"qh-gin-api/config"
-	"qh-gin-api/global"
-	"qh-gin-api/initialize/internal"
+	"github.com/lmb1113/qh-gin-api/config"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/initialize/internal"
 
 	//_ "github.com/godror/godror"
 	"gorm.io/driver/mysql"

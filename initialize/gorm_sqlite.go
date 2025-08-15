@@ -2,10 +2,10 @@ package initialize
 
 import (
 	"github.com/glebarez/sqlite"
+	"github.com/lmb1113/qh-gin-api/config"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/initialize/internal"
 	"gorm.io/gorm"
-	"qh-gin-api/config"
-	"qh-gin-api/global"
-	"qh-gin-api/initialize/internal"
 )
 
 // GormSqlite 初始化Sqlite数据库

@@ -4,13 +4,13 @@ import (
 	"flag"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/lmb1113/qh-gin-api/core/internal"
 	"os"
-	"qh-gin-api/core/internal"
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
 
-	"qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/global"
 )
 
 func Viper(path ...string) *viper.Viper {

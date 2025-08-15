@@ -1,4 +1,4 @@
-module qh-gin-api
+module github.com/lmb1113/qh-gin-api
 
 go 1.23
 

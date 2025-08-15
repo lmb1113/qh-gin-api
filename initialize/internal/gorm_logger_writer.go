@@ -2,9 +2,9 @@ package internal
 
 import (
 	"fmt"
+	"github.com/lmb1113/qh-gin-api/config"
+	"github.com/lmb1113/qh-gin-api/global"
 	"gorm.io/gorm/logger"
-	"qh-gin-api/config"
-	"qh-gin-api/global"
 )
 
 type Writer struct {

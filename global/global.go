@@ -3,12 +3,12 @@ package global
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
+	"github.com/lmb1113/qh-gin-api/config"
+	"github.com/lmb1113/qh-gin-api/utils/timer"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"golang.org/x/sync/singleflight"
 	"gorm.io/gorm"
-	"qh-gin-api/config"
-	"qh-gin-api/utils/timer"
 	"sync"
 )
 

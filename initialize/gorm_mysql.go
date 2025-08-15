@@ -2,11 +2,11 @@ package initialize
 
 import (
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/lmb1113/qh-gin-api/config"
+	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/initialize/internal"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-	"qh-gin-api/config"
-	"qh-gin-api/global"
-	"qh-gin-api/initialize/internal"
 )
 
 func GormMysql() *gorm.DB {

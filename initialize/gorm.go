@@ -1,11 +1,11 @@
 package initialize
 
 import (
+	"github.com/lmb1113/qh-gin-api/initialize/internal"
 	"gorm.io/driver/mysql"
 	"os"
-	"qh-gin-api/initialize/internal"
 
-	"qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/global"
 
 	"go.uber.org/zap"
 	"gorm.io/gorm"

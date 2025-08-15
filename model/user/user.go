@@ -1,8 +1,9 @@
 package user
 
 import (
+	"github.com/lmb1113/qh-gin-api/global"
+
 	"github.com/google/uuid"
-	"qh-gin-api/global"
 )
 
 type User struct {
@@ -14,7 +15,7 @@ type User struct {
 	Avatar   string    `json:"avatar" gorm:"default:https://img.scdn.io/i/6881a40048046_1753326592.webp;comment:用户头像"` // 用户头像
 	Phone    string    `json:"phone"  gorm:"comment:用户手机号"`                                                            // 用户手机号
 	Email    string    `json:"email"  gorm:"comment:用户邮箱"`                                                             // 用户邮箱
-	Enable   int       `json:"enable" gorm:"default:1;comment:用户是否被冻结 1正常 2冻结"`                                        //用户是否被冻结 1正常 2冻结
+	Enable   int       `json:"enable" gorm:"default:1;comment:用户是否被冻结 1正常 2冻结"`                                        // 用户是否被冻结 1正常 2冻结
 }
 
 func (u *User) TableName() string {

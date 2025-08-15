@@ -1,11 +1,11 @@
 package internal
 
 import (
+	"github.com/lmb1113/qh-gin-api/config"
+	"github.com/lmb1113/qh-gin-api/global"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
-	"qh-gin-api/config"
-	"qh-gin-api/global"
 	"time"
 )
 
