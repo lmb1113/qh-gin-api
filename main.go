@@ -4,7 +4,6 @@ import (
 	"github.com/lmb1113/qh-gin-api/core"
 	"github.com/lmb1113/qh-gin-api/global"
 	"github.com/lmb1113/qh-gin-api/initialize"
-
 	"go.uber.org/zap"
 )
 
@@ -27,5 +26,9 @@ func main() {
 	global.QGA_LOG = core.Zap()       // 初始化zap日志库
 	global.QGA_DB = initialize.Gorm() // gorm连接数据库
 	zap.ReplaceGlobals(global.QGA_LOG)
+	initialize.OtherInit()
+	if global.QGA_DB != nil {
+		initialize.RegisterTables() // 初始化表
+	}
 	core.RunServer()
 }

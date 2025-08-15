@@ -1,11 +1,10 @@
 package initialize
 
 import (
-	"github.com/lmb1113/qh-gin-api/initialize/internal"
-	"gorm.io/driver/mysql"
 	"os"
 
 	"github.com/lmb1113/qh-gin-api/global"
+	"github.com/lmb1113/qh-gin-api/model/user"
 
 	"go.uber.org/zap"
 	"gorm.io/gorm"
@@ -34,28 +33,11 @@ func Gorm() *gorm.DB {
 	}
 }
 
-func InitDb2() *gorm.DB {
-	m := global.QGA_CONFIG.Mysql
-	m.Dbname = "play"
-	mysqlConfig := mysql.Config{
-		DSN:                       m.Dsn(), // DSN data source name
-		DefaultStringSize:         191,     // string 类型字段的默认长度
-		SkipInitializeWithVersion: false,   // 根据版本自动配置
-	}
-	if db, err := gorm.Open(mysql.New(mysqlConfig), internal.Gorm.Config(m.Prefix, m.Singular)); err != nil {
-		panic(err)
-	} else {
-		db.InstanceSet("gorm:table_options", "ENGINE="+m.Engine)
-		sqlDB, _ := db.DB()
-		sqlDB.SetMaxIdleConns(m.MaxIdleConns)
-		sqlDB.SetMaxOpenConns(m.MaxOpenConns)
-		return db
-	}
-}
-
 func RegisterTables() {
 	db := global.QGA_DB
-	err := db.AutoMigrate() // todo 自动注册表
+	err := db.AutoMigrate(
+		user.User{},
+	)
 	if err != nil {
 		global.QGA_LOG.Error("register table failed", zap.Error(err))
 		os.Exit(0)

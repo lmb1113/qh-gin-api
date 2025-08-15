@@ -80,10 +80,10 @@ mysql:
     prefix: ""
     port: "3306"
     config: charset=utf8mb4&parseTime=True&loc=Local
-    db-name: report_outsource
-    username: report_outsource_api
-    password: Snwr6CmbSJr9fJYb4XCRzHX3ir
-    path: taohaohao.rwlb.rds.aliyuncs.com
+    db-name: qga
+    username: root
+    password: 123456
+    path: 127.0.0.1
     engine: ""
     log-mode: error
     max-idle-conns: 10
@@ -94,7 +94,7 @@ oracle:
     prefix: ""
     port: ""
     config: ""
-    db-name: ""
+    db-name: "qga"
     username: ""
     password: ""
     path: ""
@@ -108,7 +108,7 @@ pgsql:
     prefix: ""
     port: ""
     config: ""
-    db-name: ""
+    db-name: "qga"
     username: ""
     password: ""
     path: ""
@@ -132,7 +132,7 @@ sqlite:
     prefix: ""
     port: ""
     config: ""
-    db-name: ""
+    db-name: "qga"
     username: ""
     password: ""
     path: ""
@@ -141,9 +141,9 @@ sqlite:
     max-idle-conns: 10
     max-open-conns: 100
     singular: false
-    log-zap: false
+    log-zap: true
 system:
-    db-type: mysql
+    db-type: sqlite
     router-prefix: ""
     addr: 10668
     iplimit-count: 15000

@@ -31,6 +31,7 @@ func initSqliteDatabase(s config.Sqlite) *gorm.DB {
 		sqlDB, _ := db.DB()
 		sqlDB.SetMaxIdleConns(s.MaxIdleConns)
 		sqlDB.SetMaxOpenConns(s.MaxOpenConns)
+		sqlDB.Exec("PRAGMA journal_mode=WAL;")
 		return db
 	}
 }
